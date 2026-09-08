@@ -1,5 +1,6 @@
 from dominio.produto import Produto
 
+<<<<<<< HEAD
 
 class Mercado:
     def __init__(self, id, nome, lat, lng):
@@ -34,3 +35,18 @@ class Mercado:
             
     def __repr__(self):
         return f'Mercado({self._nome})'
+=======
+class Mercado:
+    produtos = []
+    def __init__(self, id, nome, lat, long):
+        self.id = id
+        self.nome = nome
+        self.lat = lat
+        self.long = long
+
+    def add_prod(self, produto: Produto):
+        self.produtos.append(produto)
+
+    def mostra_mercado(self):
+        return f'Bem-vindo ao mercado {self.nome}'
+>>>>>>> origin/main

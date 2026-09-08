@@ -5,6 +5,7 @@ class Produto:
         self._preco = preco
 
     def mostrar_nome(self):
+<<<<<<< HEAD
         return self._nome
 
     def alterar_preco(self, novo_preco):
@@ -21,3 +22,15 @@ class Produto:
             self._nome = novo_nome.strip()
             
     
+=======
+        pass
+
+    def alterar_preco(self, novo_preco):
+        if novo_preco < 0:
+            return 'Proibido -  Valor inválido'
+        
+        self._preco = novo_preco
+
+    def mostrar_preco(self):
+        return self._preco
+>>>>>>> origin/main
