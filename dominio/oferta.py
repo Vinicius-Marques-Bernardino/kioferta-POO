@@ -5,3 +5,8 @@ class Oferta:
         self.mercado = mercado
         self.novo_preco = novo_preco
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> origin/main
